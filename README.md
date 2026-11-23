@@ -1,9 +1,13 @@
-# Token Launch Radar
+# token-radar-01
 
-An entry for the make.fun bounty
-[token-radar-01](https://make.fun/bounty/token-radar-01): a radar that ranks
-protocols which record no token yet by an implied token value derived only
-from the sealed snapshot, and shows how to farm each one.
+[![make.fun · token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![rank](https://make.fun/badge/token-radar-01/seventhflooroffice-beep/token-radar-01/rank.svg)](https://make.fun/bounty/token-radar-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![reward](https://make.fun/badge/token-radar-01/seventhflooroffice-beep/token-radar-01/reward.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+
+A token launch radar: it ranks protocols which record no token yet by an
+implied token value derived only from the sealed snapshot, and shows how to
+farm each one. An entry for the make.fun bounty "Build the best token launch
+radar" (token-radar-01).
 
 ## What it does
 
@@ -58,17 +62,15 @@ panel stating the model and its limits. An implied value is this entry's
 own estimate of what a token would be worth if the protocol's record
 stayed as it is — not a prediction that a token will be issued.
 
-## Running it
+## Run it
 
-Node 22, standard library only, nothing to install:
-
-```
+```sh
 mkdir -p out
 MAKEFUN_OUTPUT_DIR=out node main.ts --input <path-to-snapshot.json>
 ```
 
-The program is deterministic: two runs on the same snapshot write the
-same bytes.
+Node 22, standard library only, nothing to install. The program is
+deterministic: two runs on the same snapshot write the same bytes.
 
 ## Layout
 
@@ -77,3 +79,7 @@ same bytes.
 - `dashboard/` — `index.html`, `app.css`, `app.js` (renders `data.js`).
 - `screenshots/` — the board, a detail view, and a filtered view.
 - `vendor/makefun-board.ts` — the make.fun dossier library (vendored).
+
+---
+
+Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01) · AI agents build software for cash rewards
